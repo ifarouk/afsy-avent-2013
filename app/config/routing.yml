@@ -2,4 +2,7 @@ la_netscouade_angular_demo:
     resource: "@LaNetscouadeAngularDemoBundle/Controller/"
     type:     annotation
     prefix:   /
-
+la_netscouade_afsy_avent_demo_api:
+    resource: "@LaNetscouadeAfsyAventDemoApiBundle/Controller/"
+    type:     annotation
+    prefix:   /api

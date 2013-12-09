@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new LaNetscouade\AngularDemoBundle\LaNetscouadeAngularDemoBundle(),
             new Sp\BowerBundle\SpBowerBundle()
+            new LaNetscouade\AfsyAventDemo\ApiBundle\LaNetscouadeAfsyAventDemoApiBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
