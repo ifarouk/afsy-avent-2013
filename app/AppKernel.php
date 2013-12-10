@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new LaNetscouade\AngularDemoBundle\LaNetscouadeAngularDemoBundle(),
             new Sp\BowerBundle\SpBowerBundle(),
             new LaNetscouade\AfsyAventDemo\ApiBundle\LaNetscouadeAfsyAventDemoApiBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

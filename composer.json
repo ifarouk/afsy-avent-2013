@@ -19,7 +19,8 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sp/bower-bundle": "dev-master"
+        "sp/bower-bundle": "dev-master",
+        "nelmio/cors-bundle": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
