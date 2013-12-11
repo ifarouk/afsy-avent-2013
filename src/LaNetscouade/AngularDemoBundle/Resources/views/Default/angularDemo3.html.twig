@@ -1,0 +1,35 @@
+{% extends 'LaNetscouadeAngularDemoBundle::layout.html.twig' %}
+
+{% block javascripts %}
+    {% javascripts
+        "@bootstrap_js"
+        "@angular_js"
+        "bundles/fosjsrouting/js/router.js"
+        "bundles/bazingaexposetranslation/js/translator.min.js"
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    <script type="text/javascript" src="{{ url('bazinga_exposetranslation_js') }}"></script>
+    <script src="{{ asset('bundles/lanetscouadeangulardemo/js/angularDemo3.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Translation demo</h1>
+        <div id="demo-widget" ng-app>
+            {{ 'Symfony2 is great'|trans }}
+            {% verbatim %}
+                <div ng-controller="TranslationDemoCtrl">
+                   <span>{{routes.length}} routes:</span>
+                   <ul class="unstyled">
+                        <li ng-repeat="route in routes">
+                          <input type="checkbox" ng-model="route.done">
+                          <span class="done-{{route.done}}"><a href="{{route.link}}">{{route.text}}</a></span>
+                        </li>
+                    </ul>
+                </div>
+            {% endverbatim %}
+        </div>
+    </div>
+{% endblock %}

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "bb1222682b4a9efa3f62382f321401d1",
+    "hash": "8b1b67c2007ef83c1efe833218edb1e4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2102,6 +2102,59 @@
                 "templating"
             ],
             "time": "2013-12-06 07:47:10"
+        },
+        {
+            "name": "willdurand/expose-translation-bundle",
+            "version": "1.1.0",
+            "target-dir": "Bazinga/ExposeTranslationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/BazingaExposeTranslationBundle.git",
+                "reference": "52a58fb340e1ff1ef8324cecd79ac4e9b30a3330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/BazingaExposeTranslationBundle/zipball/52a58fb340e1ff1ef8324cecd79ac4e9b30a3330",
+                "reference": "52a58fb340e1ff1ef8324cecd79ac4e9b30a3330",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "~2.0",
+                "symfony/finder": "~2.0",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "~2.0",
+                "symfony/yaml": "~2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Bazinga\\ExposeTranslationBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "A pretty nice way to expose your translation messages to your JavaScript.",
+            "keywords": [
+                "javascript",
+                "translation"
+            ],
+            "time": "2013-11-26 10:35:53"
         },
         {
             "name": "willdurand/jsonp-callback-validator",

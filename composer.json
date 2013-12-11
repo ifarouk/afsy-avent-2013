@@ -23,7 +23,8 @@
         "nelmio/cors-bundle": "~1.0",
         "friendsofsymfony/jsrouting-bundle": "1.4.1",
         "friendsofsymfony/rest-bundle": "1.1.*",
-        "jms/serializer-bundle": "dev-master"
+        "jms/serializer-bundle": "dev-master",
+        "willdurand/expose-translation-bundle": "1.1.0"
     },
     "scripts": {
         "post-install-cmd": [

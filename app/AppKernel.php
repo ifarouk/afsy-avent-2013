@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Sp\BowerBundle\SpBowerBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Bazinga\ExposeTranslationBundle\BazingaExposeTranslationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

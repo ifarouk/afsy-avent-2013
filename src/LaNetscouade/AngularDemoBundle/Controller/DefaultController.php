@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/", name="home", options={"expose"=true})
      * @Template()
      */
     public function indexAction()
@@ -31,6 +31,15 @@ class DefaultController extends Controller
      * @Template()
      */
     public function angularDemo2Action()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/angular-demo3", name="angular_demo3", options={"expose"=true})
+     * @Template()
+     */
+    public function angularDemo3Action()
     {
         return array();
     }
