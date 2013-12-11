@@ -1,0 +1,32 @@
+{% extends 'LaNetscouadeAngularDemoBundle::layout.html.twig' %}
+
+{% block javascripts %}
+    {% javascripts
+        "@bootstrap_js"
+        "@angular_js"
+        "bundles/fosjsrouting/js/router.js"
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    <script src="{{ asset('bundles/lanetscouadeangulardemo/js/angularDemo2.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Routing demo</h1>
+        <div id="demo-widget" ng-app>
+            {% verbatim %}
+                <div ng-controller="RoutingDemoCtrl">
+                   <span>{{routes.length}} routes:</span>
+                   <ul class="unstyled">
+                        <li ng-repeat="route in routes">
+                          <input type="checkbox" ng-model="route.done">
+                          <span class="done-{{route.done}}"><a href="{{route.link}}">{{route.text}}</a></span>
+                        </li>
+                    </ul>
+                </div>
+            {% endverbatim %}
+        </div>
+    </div>
+{% endblock %}

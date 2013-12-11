@@ -9,19 +9,28 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
+     * @Route("/", name="home")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        return array();
     }
 
     /**
-     * @Route("/angular-demo")
+     * @Route("/angular-demo1", name="angular_demo1", options={"expose"=true})
      * @Template()
      */
-    public function angularDemoAction()
+    public function angularDemo1Action()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/angular-demo2", name="angular_demo2", options={"expose"=true})
+     * @Template()
+     */
+    public function angularDemo2Action()
     {
         return array();
     }

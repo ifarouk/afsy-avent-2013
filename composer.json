@@ -20,7 +20,8 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "sp/bower-bundle": "dev-master",
-        "nelmio/cors-bundle": "~1.0"
+        "nelmio/cors-bundle": "~1.0",
+        "friendsofsymfony/jsrouting-bundle": "1.4.1"
     },
     "scripts": {
         "post-install-cmd": [

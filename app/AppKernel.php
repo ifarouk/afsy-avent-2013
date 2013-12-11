@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Sp\BowerBundle\SpBowerBundle(),
             new LaNetscouade\AfsyAventDemo\ApiBundle\LaNetscouadeAfsyAventDemoApiBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

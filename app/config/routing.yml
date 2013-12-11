@@ -7,3 +7,6 @@ la_netscouade_afsy_avent_demo_api:
     resource: "@LaNetscouadeAfsyAventDemoApiBundle/Controller/"
     type:     annotation
     prefix:   /api
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
