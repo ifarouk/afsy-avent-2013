@@ -33,7 +33,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ ]
+    bundles:        [ LaNetscouadeAngularDemoBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -75,6 +75,7 @@ nelmio_cors:
             allow_headers: ['X-Custom-Auth']
             allow_methods: ['POST', 'PUT', 'GET', 'DELETE','OPTIONS']
             max_age: 3600
+
 sp_bower:
     bundles:
         LaNetscouadeAngularDemoBundle: ~

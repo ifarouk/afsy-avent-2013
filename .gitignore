@@ -10,4 +10,6 @@
 /bin/
 /composer.phar
 
+/src/LaNetscouade/AngularDemoBundle/Resources/public/components/*
+!src/LaNetscouade/AngularDemoBundle/Resources/public/components/.gitkeep
 .DS_Store

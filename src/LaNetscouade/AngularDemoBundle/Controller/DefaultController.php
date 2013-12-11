@@ -16,4 +16,13 @@ class DefaultController extends Controller
     {
         return array('name' => $name);
     }
+
+    /**
+     * @Route("/angular-demo")
+     * @Template()
+     */
+    public function angularDemoAction()
+    {
+        return array();
+    }
 }
