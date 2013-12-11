@@ -68,6 +68,16 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+fos_rest:
+    param_fetcher_listener: force
+    body_listener: true
+    format_listener: false
+    service:
+        router: router
+        templating: templating
+        serializer: jms_serializer.serializer
+        view_handler: fos_rest.view_handler.default
+
 nelmio_cors:
     paths:
         '^/api/':

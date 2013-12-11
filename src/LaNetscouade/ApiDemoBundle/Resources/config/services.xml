@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="la_netscouade_afsy_avent_demo_api.example.class">LaNetscouade\AfsyAventDemo\ApiBundle\Example</parameter>
+        <parameter key="la_netscouade_api_demo.example.class">LaNetscouade\ApiDemoBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="la_netscouade_afsy_avent_demo_api.example" class="%la_netscouade_afsy_avent_demo_api.example.class%">
+        <service id="la_netscouade_api_demo.example" class="%la_netscouade_api_demo.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>

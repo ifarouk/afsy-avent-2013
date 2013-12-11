@@ -1,6 +1,6 @@
 <?php
 
-namespace LaNetscouade\AfsyAventDemo\ApiBundle\DependencyInjection;
+namespace LaNetscouade\ApiDemoBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('la_netscouade_afsy_avent_demo_api');
+        $rootNode = $treeBuilder->root('la_netscouade_api_demo');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

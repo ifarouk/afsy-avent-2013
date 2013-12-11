@@ -16,9 +16,13 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+
             new LaNetscouade\AngularDemoBundle\LaNetscouadeAngularDemoBundle(),
+            new LaNetscouade\ApiDemoBundle\LaNetscouadeApiDemoBundle(),
+
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
             new Sp\BowerBundle\SpBowerBundle(),
-            new LaNetscouade\AfsyAventDemo\ApiBundle\LaNetscouadeAfsyAventDemoApiBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
         );

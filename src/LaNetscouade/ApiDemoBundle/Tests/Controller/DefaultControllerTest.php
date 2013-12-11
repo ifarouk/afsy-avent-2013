@@ -1,6 +1,6 @@
 <?php
 
-namespace LaNetscouade\AfsyAventDemo\ApiBundle\Tests\Controller;
+namespace LaNetscouade\ApiDemoBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

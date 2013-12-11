@@ -3,10 +3,9 @@ la_netscouade_angular_demo:
     type:     annotation
     prefix:   /
 
-la_netscouade_afsy_avent_demo_api:
-    resource: "@LaNetscouadeAfsyAventDemoApiBundle/Controller/"
-    type:     annotation
-    prefix:   /api
+la_netscouade_api_demo_bundle:
+    resource: LaNetscouade\ApiDemoBundle\Controller\CocktailController
+    type:     rest
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
