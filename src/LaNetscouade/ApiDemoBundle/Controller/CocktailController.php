@@ -11,6 +11,14 @@ use FOS\RestBundle\View\View;
  */
 class CocktailController extends BaseController
 {
+
+       /**
+        * @return mixed
+        */
+       public function getAction()
+       {
+          return ;
+       }
     /**
      * get list action
      * @return mixed
