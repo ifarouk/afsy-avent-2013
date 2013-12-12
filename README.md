@@ -12,17 +12,7 @@ Install dependencies
 
     php composer.phar install
 
-**Front /AngularJS**
 
-Install yeoman
+Install Angular & dependencies
 
-    npm install -g yo
-
-Install dependencies
-
-    cd web/angular
-    bower install
-
-Launch the server
-
-    grunt server
+	php app/console sp:bower:install
