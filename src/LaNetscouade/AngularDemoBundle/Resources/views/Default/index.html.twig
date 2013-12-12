@@ -1,12 +1,20 @@
-<!doctype html>
-<html>
-<head>
-	<title>Déployer une architecture "client-server" avec Symfony2 et AngularJS</title>
-</head>
-<body>
-	<h1>Tips &amp; Tricks: Déployer une architecture "client-server" avec Symfony2 et AngularJS.</h1>
+{% extends 'LaNetscouadeAngularDemoBundle::layout.html.twig' %}
 
-	<a href="{{ path('angular_demo1') }}">Voir la demo1</a>
-	<a href="{{ path('angular_demo2') }}">Voir la demo2</a>
-</body>
-</html>
+{% block body %}
+    <div class="container">
+        <h1>AngularJS with Twig</h1>
+
+
+        <div id="angular-app" ng-controller="cocktailsIndexController">
+            {% verbatim %}
+            <h2>{{ pageTitle }}</h2>
+            <ul>
+                <li ng-repeat="cocktail in cocktailsList">
+                <a href="cocktails/{{cocktail.id}}">{{cocktail.name}}</a>
+                </li>
+            </ul>
+            {% endverbatim %}
+
+        </div>
+    </div>
+{% endblock %}

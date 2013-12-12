@@ -34,7 +34,9 @@ class CocktailController extends BaseController
 
     //to improve readability, we set variable here.
     private $dataStore = array(
-        array('name' => 'Mojito',
+        array(
+            'id'=>1,
+            'name' => 'Mojito',
             'ingredients' => array(
                 array(
                     'name' => 'Rhum Cubain',
@@ -57,7 +59,9 @@ class CocktailController extends BaseController
                 ),
             ),
         ),
-        array('name' => 'Tequila Sunrise',
+        array(
+            'id'=>2,
+            'name' => 'Tequila Sunrise',
             'ingredients' => array(
                 array(
                     'name' => 'Tequila',
@@ -73,7 +77,9 @@ class CocktailController extends BaseController
                 ),
             ),
         ),
-        array('name' => 'Bloody Mary',
+        array(
+            'id'=>3,
+            'name' => 'Bloody Mary',
             'ingredients' => array(
                 array(
                     'name' => 'Vodka',
@@ -106,7 +112,9 @@ class CocktailController extends BaseController
                 ),
             ),
         ),
-        array('name' => 'Piña Colada',
+        array(
+            'id'=>4,
+            'name' => 'Piña Colada',
             'ingredients' => array(
                 array(
                     'name' => 'Rhum blanc',
@@ -126,7 +134,9 @@ class CocktailController extends BaseController
                 ),
             ),
         ),
-        array('name' => 'Cosmopolitan',
+        array(
+            'id'=>5,
+            'name' => 'Cosmopolitan',
             'ingredients' => array(
                 array(
                     'name' => 'Vodka',
@@ -146,7 +156,9 @@ class CocktailController extends BaseController
                 ),
             ),
         ),
-        array('name' => 'Gin Tonic',
+        array(
+            'id'=>6,
+            'name' => 'Gin Tonic',
             'ingredients' => array(
                 array(
                     'name' => 'Schweppes',

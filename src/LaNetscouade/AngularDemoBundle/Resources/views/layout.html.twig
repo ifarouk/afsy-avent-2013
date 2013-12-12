@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html ng-app="demoApp">
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Symfony2 - AngularJS demo{% endblock %}</title>
@@ -11,9 +11,27 @@
                 <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
+
+        {% block javascripts %}
+            {% javascripts
+                "@bootstrap_js"
+                "@lodash_js"
+                "@restangular_js"
+                "@angular_js"
+            %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+            <script type="text/javascript" src="{{ asset('bundles/lanetscouadeangulardemo/js/cocktails.js') }}"></script>
+            <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+            <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+
+
+        {% endblock %}
+
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+
+        {% endblock %}
     </body>
 </html>
